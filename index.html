@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+    <div id="loader">
+        <h1>Scori</h1>
+        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xcpxkfnu.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    </div>
+    
+    <section id="content">
+        <h1 id="title">Scori</h1>
+        <div class="main">
+            <span id="error">tous les champs sont obligatoires</span>
+        <label for="moy1">moyenne generale 1ere année</label>
+        <input id="moy1" type="number" min="0" max="20" value="0">
+        <label for="moy2">moyenne generale 2eme année</label>
+        <input id="moy2" type="number" min="0" max="20" value="0">
+        <div>
+            <label >1ere année :</label>
+            <div>
+
+                <input id="r1" type="radio" name="r1">
+                <span>principale</span>
+                <input id="r11"type="radio" name="r1">
+                <span>controle</span>
+            </div>
+        </div>
+        <div>
+            <label >2eme année :</label>
+            <div>
+
+                <input id="r2" type="radio" name="r2">
+                <span>principale</span>
+                <input id="r22" type="radio" name="r2">
+                <span>controle</span>
+            </div>
+        </div>
+        <button id="button" type="button" onclick="calcul()"> Calculez</button>
+        <span id="score"></span>
+    </div>
+
+    
+
+    </section>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script></body>
+    <script src="index.js"></script>
+</body>
+    </html>
